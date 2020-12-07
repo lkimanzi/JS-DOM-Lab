@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./main.js"></script>
+    <title>Temperature Scale Converter</title>
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <h1 class="text-center">Temperature Scale Converter</h1>
+      <br />
+      <div class="flex">
+        <h2>Fahrenheit</h2>
+        <div class="grid text-center">
+          <label for="temp">Value</label>
+
+          <!-- We're using this input field in our main.js to get the entered value -->
+          <!-- as it has id='temp', we're using document.getElementById('temp').value  to get its current value-->
+          <!-- and we're calling it each time the button is clicked, so value maybe different each time -->
+          <input type="text" id="temp" />
+        </div>
+
+        <!-- here id="calculate_btn", we're using it at the top of main.js with: -->
+        <!-- const btn = document.getElementById("calculate_btn"); -->
+        <button id="calculate_btn" class="btn">Calculate</button>
+      </div>
+      <div class="result mtb-10">
+        <div class="grid">
+          <h3>Celsius</h3>
+          <p id="celsius">0</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
